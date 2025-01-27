@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Description Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-inner img {
+            height: 400px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .footer a {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ghorar Dim Online Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Product Image Carousel -->
+            <div class="col-md-6">
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="gsmarena_004.jpg" class="d-block w-100" alt="Product Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images.jpeg" class="d-block w-100" alt="Product Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Redmi-12-5G-review-2-scaled.jpg" class="d-block w-100" alt="Product Image 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="col-md-6">
+                <h1>Redmi Note 12</h1>
+                <p class="text-muted">Goriber Iphone</p>
+                <h3 class="text-success">$199.99</h3>
+                <ul>
+                    <li>Snapdragon Processor</li>
+                    <li>Amazing Camera</li>
+                    <li>Good battery backup</li>
+                    <li>Ultra Slim</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Accordion for Product Details -->
+        <div class="mt-5">
+            <div class="accordion" id="productAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingDescription">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDescription" aria-expanded="true" aria-controls="collapseDescription">
+                            Product Description
+                        </button>
+                    </h2>
+                    <div id="collapseDescription" class="accordion-collapse collapse show" aria-labelledby="headingDescription" data-bs-parent="#productAccordion">
+                        <div class="accordion-body">
+                            The Xiaomi Redmi 12 (4/128) is a feature-packed smartphone that caters to a wide range of users. The variants available for the Redmi 12 include different RAM configurations: 4GB, 6GB, and 8GB, paired with 128GB or 256GB of internal storage. This flexibility ensures that users can choose the right balance between performance and storage capacity based on their needs.
+
+One of the notable features of the Redmi 12 is its large 6.79-inch IPS LCD display with a 90Hz refresh rate. This high refresh rate ensures smoother animations and interactions, making it ideal for gaming and multimedia consumption. Additionally, the display reaches a peak brightness of 550 nits, ensuring good visibility even in bright sunlight.
+
+The camera setup on the Redmi 12 is impressive. The triple rear camera includes a 50MP primary lens with a wide aperture of f/1.8, an 8MP ultrawide lens, and a 2MP macro lens. These cameras deliver detailed and vibrant photos, whether you’re capturing landscapes, close-ups, or group shots. On the front, there’s an 8MP selfie camera for clear and sharp self-portraits.
+
+Another compelling reason to consider the Redmi 12 is its 5000mAh battery. This substantial battery capacity ensures all-day usage without worrying about frequent recharges. Moreover, the phone supports 18W fast charging, allowing you to top up the battery quickly when needed.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSpecifications">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpecifications" aria-expanded="false" aria-controls="collapseSpecifications">
+                            Technical Specifications
+                        </button>
+                    </h2>
+                    <div id="collapseSpecifications" class="accordion-collapse collapse" aria-labelledby="headingSpecifications" data-bs-parent="#productAccordion">
+                        <div class="accordion-body">
+                            Technical Specifications Data will be release soon. Stay connected.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>Follow us on:</p>
+            <a href="#" class="https://www.facebook.com">Facebook</a>
+            <a href="#" class="https://www.x.com">Twitter</a>
+            <a href="#" class="https://www.instagram.com">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
